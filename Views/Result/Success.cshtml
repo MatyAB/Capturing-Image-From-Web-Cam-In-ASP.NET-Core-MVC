@@ -1,0 +1,28 @@
+﻿<!DOCTYPE>
+<html>
+<div class="popup center">
+        <div class="icon">
+            <i class="fa fa-check"></i>
+
+
+        </div>
+        <div class="title">
+            Success!!
+        </div>
+        <div class="dismiss-btn"></div>
+        <button id ="dismiss-popup-btn">
+            Open PopUp
+        </button>
+
+    </div>
+</html>
+
+</style>
+<script type="text/javascript">
+  document.getElementById("open-popup-btn").addEventListener("click",function(){
+      document.getElementsByClassName("popup")[0].classList.add("active");
+  });
+    document.getElementById("dismiss-popup-btn").addEventListener("click",function(){
+      document.getElementsByClassName("popup")[0].classList.remove("active");
+  });
+</script>
